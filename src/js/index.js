@@ -41,7 +41,7 @@ buttonSubmit.addEventListener('click', () => {
 
 
         confirmationScreen.classList.add('screen-confirm')
-        confirmationScreen.innerHTML = `<img class="complete-image" src="src/images/icon-complete.svg" alt="icon complete">
+        confirmationScreen.innerHTML = `<img class="complete-image" src="./src/images/icon-complete.svg" alt="icon complete">
                                         <h1 class="title-confirmation">Muito Obrigado!</h1>
                                         <h3 class="description-confirmation">Nós adicionamos os detalhes no seu cartão</h3>`
 
