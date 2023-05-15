@@ -1,0 +1,244 @@
+html::-webkit-scrollbar {
+            width: 0;
+        }
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.container {
+    background: url("../images/bg-main-desktop.png") #d1cbcb no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cards {
+    margin-right: 10rem;
+}
+
+.main {
+
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.container-card-front {
+    background-image: url('../images/bg-card-front.png');
+    width: 447px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.container-card-front #card-logo {
+    width: 10rem;
+    height: 5.2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.container-card-front #card-number {
+    color: #fff;
+}
+
+.container-card-front #card-name {
+    position: absolute;
+    left: 2rem;
+    bottom: 3.8rem;
+    color: #fff;
+}
+
+.container-card-front #card-date {
+    position: absolute;
+    right: 2rem;
+    bottom: 3.8rem;
+    color: #fff;
+}
+
+.container-card-back {
+    background-image: url('../images/bg-card-back.png');
+    width: 447px;
+    height: 245px;
+    margin-left: 9rem;
+}
+
+.container-card-back #cvv-number {
+    padding-top: 11rem;
+    padding-left: 80%;
+    color: #fff;
+}
+
+#informations {
+    width: 40rem;
+    height: auto;
+    display: grid;
+    grid: "nameLabel nameLabel nameLabel" 3rem 
+          "nameInput nameInput nameInput" 4rem
+          "campoInvalido campoInvalido campoInvalido" 3rem
+          "numberLabel numberLabel numberLabel" 3rem 
+          "numberInput numberInput numberInput" 4rem 
+          "campoInvalido2 campoInvalido2 campoInvalido2" 3rem
+          "dateLabel dateLabel cvvLabel" 3rem 
+          "mounthInput yearInput cvvInput" 4rem
+          "campoInvalido3 campoInvalido3 campoInvalido4" 8rem
+          "submitInput submitInput submitInput";
+}
+
+label {
+    font-size: 2rem;
+}
+
+input {
+    border-radius: 0.8rem;
+    border-style: none;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+#name-label {
+    grid-area: nameLabel;
+}
+
+#number-label {
+    grid-area: numberLabel;
+}
+
+#date-label {
+    grid-area: dateLabel;
+}
+
+#cvv-label {
+    grid-area: cvvLabel;
+    margin-left: 6.5rem;
+}
+
+#name-input {
+    width: 40rem;
+    grid-area: nameInput;
+}
+
+input:focus {
+    outline: none;
+    border-color: hsl(249, 99%, 64%);
+    border-style: solid;
+}
+
+#number-input {
+    width: 40rem;
+    grid-area: numberInput;
+}
+
+#mounth-input {
+    width: 8rem;
+    margin-right: 2rem;
+    grid-area: mounthInput;
+}
+
+#year-input {
+    width: 8rem;
+    grid-area: yearInput;
+}
+
+#cvv-input {
+    width: 15rem;
+    grid-area: cvvInput;
+    margin-left: 6.5rem;
+}
+
+#submit-input {
+    background-color: hsl(278, 68%, 11%);
+    width: 40rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0.8rem;
+    border-style: none;
+    grid-area: submitInput;
+    transition: 0.6s;
+}
+
+#submit-input:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.screen-confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screen-confirm .complete-image {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 1.8rem;
+    animation: scale 0.7s linear;
+}
+
+@keyframes scale {
+    0% {
+        scale: 0.2;
+    }
+
+    90% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.screen-confirm .title-confirmation {
+    font-size: 4rem;
+}
+
+#campoInvalido {
+    font-size: 1.3rem;
+    color: hsl(0, 100%, 66%);
+    grid-area: campoInvalido;
+    
+}
+
+#campoInvalido2 {
+    font-size: 1.3rem;
+    color: hsl(0, 100%, 66%);
+    grid-area: campoInvalido2;
+}
+
+#campoInvalido3 {
+    font-size: 1.3rem;
+    color: hsl(0, 100%, 66%);
+    grid-area: campoInvalido3;
+    text-align: justify;
+}
+
+#campoInvalido4 {
+    font-size: 1.3rem;
+    color: hsl(0, 100%, 66%);
+    grid-area: campoInvalido4;
+    margin-left: 6.5rem;
+    text-align: justify;
+}
+
+.hide {
+    display: none;
+}

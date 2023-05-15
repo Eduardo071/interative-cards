@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+
+  <title>Cards page</title>
+</head>
+
+<body class="container">
+
+  <main class="main">
+
+    <section class="container-cards">
+      <div class="container-card-front">
+
+        <img id="card-logo" src="src/images/card-logo.svg" alt="">
+        <h2 id="card-number">0000 0000 0000 0000</h2>
+        <h3 id="card-name">joao silva</h3>
+        <h3 id="card-date">04/2025</h3>
+
+      </div>
+
+      <div class="container-card-back">
+        <h3 id="cvv-number">000</h3>
+      </div>
+
+
+    </section>
+    <div id="changeScreen">
+    <form id="informations">
+      <label id="name-label" for="name-input">Titular do cartão</label>
+
+      <input id="name-input" type="text" placeholder="Digite seu nome">
+      <h3 id="campoInvalido" class="hide">Preencha este campo</h3>
+
+
+      <label id="number-label" for="number-input">Número do cartão</label>
+
+      <input id="number-input" type="number" placeholder="Número do cartão">
+      <h3 id="campoInvalido2" class="hide">Preencha este campo apenas com números</h3>
+      
+      <label id="date-label" for="mounth-input"> Data exp. (MM/AA) </label>
+
+
+      <input id="mounth-input" type="number" placeholder="MM">
+      <h3 id="campoInvalido3" class="hide">Preencha estes campos corretamente</h3>
+
+
+      <input id="year-input" type="number" placeholder="AA">
+
+      <label id="cvv-label" for="cvv-input">CVV</label>
+
+      <input id="cvv-input" type="number" placeholder="CVV">
+      <h3 id="campoInvalido4" class="hide">Preencha este campo corretamente</h3>
+
+
+      <button id="submit-input">Enviar</button>
+    </form>
+  </div>
+  </main>
+
+
+  <script src="src/js/index.js"></script>
+</body>
+
+</html>
+
