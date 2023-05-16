@@ -23,11 +23,7 @@ let cardNumber = document.getElementById('card-number')
 let cardDate = document.getElementById('card-date')
 let cardCvv = document.getElementById('cvv-number')
 
-console.log(camposInvalidos[0].classList)
-
-buttonSubmit.addEventListener('click', () => {
-
-
+function submitInformations() {
     if (inputsForm[0].value !== '' &&
         inputsForm[1].value !== '' &&
         inputsForm[2].value !== '' &&
@@ -68,6 +64,11 @@ buttonSubmit.addEventListener('click', () => {
         camposInvalidos[3].classList.add('hide')
     }
 
+}
+
+buttonSubmit.addEventListener('click', () => {
+
+    submitInformations()
 
 })
 
